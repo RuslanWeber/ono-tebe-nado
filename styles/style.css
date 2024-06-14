@@ -108,6 +108,10 @@
     letter-spacing: 0.01em;
 }
 
+.address {
+    font-style: normal;
+}
+
     /*//////
     COVER
     //////*/
@@ -423,8 +427,9 @@
     //////*/
 
 .footer {
-    padding: 180px 50px 88px 50px;
-    min-width: 1000px;
+    margin: 0 auto;
+    padding: 180px 0 88px 0;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content:space-between;
@@ -440,7 +445,6 @@
     margin-right: 25px;
     display: flex;
     flex-direction: column;
-    
     line-height: 24px;
     
     
