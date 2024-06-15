@@ -57,7 +57,7 @@
   height: 105px;
 }
 
-.contacts-header {
+.contacts {
   max-width: 240px;
   display: flex;
   flex-direction: column;
@@ -93,8 +93,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  z-index: 1;
+  z-index: -1;
 }
 
 .overlay {
@@ -102,14 +101,14 @@
   inset: 0;
   background-color: #000;
   opacity: 0.6;
-  z-index: 2;
+  z-index: 1;
 }
 
 .cover_title {
   display: flex;
   flex-direction: column;
   padding-bottom: 135px;
-  z-index: 3;
+  z-index: 2;
   font-weight: 700;
   font-size: 100px;
   line-height: 1.15;
@@ -143,7 +142,7 @@
 
 .cover__description {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -226,13 +225,13 @@
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
-  z-index: 3;
+  z-index: 2;
 }
 
 .card__text {
   font-size: 20px;
   line-height: 24px;
-  z-index: 3;
+  z-index: 2;
 }
 
 .spacing_lots_picture {
@@ -365,16 +364,12 @@
   justify-content: space-between;
   font-size: 18px;
   font-style: normal;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 400;
 }
 
-.contacts-footer {
-  max-width: 240px;
-  margin-right: 25px;
-  display: flex;
-  flex-direction: column;
-  line-height: 24px;
+.contacts-justify-self {
+  justify-self: flex-start;
 }
 
 .footer-menu {
